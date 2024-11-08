@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillCopyrightCircle,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
@@ -17,10 +18,22 @@ function Footer() {
     <Container fluid className="footer" >
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Anmol Chaudhary</h3>
+          {/* <h3>Designed and Developed by Anmol Chaudhary</h3> */}
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} AC</h3>
+          <h3>Copyright {year}@
+
+          <a
+                href="https://github.com/soumyajit4419"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillCopyrightCircle />
+              </a>
+
+
+          </h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
