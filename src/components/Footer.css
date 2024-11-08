@@ -1,0 +1,62 @@
+/* Ensure the body and html take the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Wrapper to make the layout use full height */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  /* Content section that will take up remaining space */
+  .content {
+    flex: 1;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    /* background-color: #333; */
+    color: white;
+    padding: 20px 0;
+    /* position: relative; Position it relative to the page */
+    position: inherit;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 0px;
+  }
+  
+  .footer-copywright h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .footer-body {
+    margin-top: 10px;
+  }
+  
+  .footer-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #f39c12; /* Highlight the icon on hover */
+  }
+  
+  
+  

@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import face from "../../Assets/Projects/face.jpg";
+import cricket from "../../Assets/Projects/cricket.jpg";
+import shoping from "../../Assets/Projects/shopping.jpg";
+import soil from "../../Assets/Projects/soil health.jpg";
+import  stream from "../../Assets/Projects/stream.jpg";
+import blog from "../../Assets/Projects/blog.png";
+
 
 function Projects() {
   return (
@@ -23,68 +24,68 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={cricket}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="CrickInformer"
+              description="The Real-Time Live Sports Scores and Match Analysis Application is a comprehensive platform focused on providing real-time cricket scores, player statistics, and detailed match analysis. Built with Spring Boot, Spring JPA, Hibernate, MySQL, React, and Tailwind CSS, the application delivers instant updates, insightful analytics, and a seamless user experience, ensuring high performance, scalability, and an intuitive interface for sports enthusiasts and analysts."
+              ghLink="https://github.com/chaudharyanmol/CrickInformer.git"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={face}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Students Details using Face Recognition"
+              description="The Students Details using Face Recognition System is an automated solution designed for educational institutions such as universities, colleges, and schools to streamline the students details. This system leverages facial recognition technology to accurately identify students and to provide  their details in real-time without requiring any manual intervention."
+              ghLink="https://github.com/chaudharyanmol/Fetching-Students-details-using-face-recognition"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={shoping}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="UrbanCart"
+              description="The UrbanCart is an dynamic E-commerce store built using Next.js and React for the frontend, providing a seamless and responsive shopping experience. It features product listings, a shopping cart, secure checkout, and user authentication. The website is optimized for performance and scalability, with Next.js offering server-side rendering and fast loading times. "
+              ghLink="https://github.com/chaudharyanmol/E-Com_website.github.io"
+              demoLink="#"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={blog}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="TechBlog"
+              description="TechBlog is a Java-based web app where users can share technical blogs across various categories. Built with HTML, CSS, JavaScript, Bootstrap, Ajax, Servlets, JSP, and MySQL, it offers an interactive, responsive interface. Users can create and manage blogs, while admins can control content."
+              ghLink="#"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={soil}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Soil Health Monitoring System"
+              description="The Soil Health Monitoring System uses machine learning to analyze soil data such as pH, moisture, and nutrient levels. It provides insights into soil quality, helping farmers make informed decisions on irrigation and fertilization. This system promotes better soil management, leading to improved crop yields and sustainable farming practices."
+              ghLink="https://github.com/chaudharyanmol/Soil-healthMonitoring.git"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={stream}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Streamify"
+              description="Streamify is a video streaming application built with Spring Boot that enables users to upload, store, and stream video content. It features a backend for video file management and metadata storage, with videos uploaded via RESTful APIs and stored on a server or cloud storage. Optional user authentication and a frontend can enhance the streaming experience, making Streamify a flexible and efficient platform for video sharing."
+              // ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+                
             />
           </Col>
         </Row>
